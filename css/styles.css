@@ -15,7 +15,7 @@
 
 .conteiner {
   width: 1200px;
-  
+
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -129,6 +129,7 @@ border-top: 1px solid var(--min-background-color);
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
+  
 }
 
 .project-btn {
