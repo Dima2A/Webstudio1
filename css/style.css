@@ -189,7 +189,7 @@
     margin-right: auto;
   }
   
-  /* про нашу сторінку */
+  
   
   .aboutpage {
     padding-top: 94px;
@@ -436,8 +436,7 @@
     justify-content: space-between;
   }
   
-  .client-item {
-  }
+  
   
   .client-link {
     border: solid 1px #afb1b8;
@@ -678,7 +677,7 @@
   }
   
   .modal-close:hover {
-  .modal-icon_close{  
+    .modal-icon_close {
     fill: var(--button-backgrouhd-color);
     }
   }
@@ -737,8 +736,7 @@
     outline: 1px solid var(--button-backgrouhd-color);
   }
   
-  .modal-label:hover
-  .modal-icon_person ,
+  .modal-label:hover .modal-icon_person ,
   .modal-label:focus-within .modal-icon_person{
     fill: var(--button-backgrouhd-color);
   }
@@ -834,3 +832,4 @@
     justify-content: center;
     align-items: center;
   }
+  
