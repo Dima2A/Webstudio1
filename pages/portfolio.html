@@ -216,28 +216,28 @@
           <li>
             <a href="#" class="footer__internet">
               <svg class="footer__icon">
-                <use href="./imgs/symbol-defs.svg#icon-instagram"></use>
+                <use href="../imgs/symbol-defs.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#" class="footer__internet">
               <svg class="footer__icon">
-                <use href="./imgs/symbol-defs.svg#icon-twitter"></use>
+                <use href="../imgs/symbol-defs.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#" class="footer__internet">
               <svg class="footer__icon">
-                <use href="./imgs/symbol-defs.svg#icon-facebook"></use>
+                <use href="../imgs/symbol-defs.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
           <li>
             <a href="#" class="footer__internet">
               <svg class="footer__icon">
-                <use href="./image/symbol-defs.svg#icon-linkedin"></use>
+                <use href="../imgs/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </a>
           </li>
@@ -252,7 +252,7 @@
               <button class="footer__btn">
                 <p class="footer__text">Підписатися</p>
                 <svg class="footer__icon__person">
-                  <use href="./imgs/symbol-defs.svg#icon-telegram"></use>
+                  <use href="../imgs/symbol-defs.svg#icon-telegram"></use>
                 </svg>
               </button>
             </label>
@@ -261,5 +261,62 @@
       </div>
     </div>
   </footer>
+  
+  <!-- modal -->
+  <div class="modal__backdrop is-hidden" data-modal>
+    <div class="modal__modal">
+      <button class="modal__close" type="button" data-modal-close>
+        <svg class="modal__icon_close">
+          <use href="../imgs/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+      <form class="modal__form">
+        <label class="modal__label">
+          Ім'я
+          <svg class="modal__icon_person">
+            <use href="../imgs/symbol-defs.svg#icon-person"></use>
+          </svg>
+          <input required type="text" class="modal__input" />
+        </label>
+        <label class="modal__label">
+          Телефон
+          <svg class="modal__icon_person">
+            <use href="../imgs/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <input required type="tel" class="modal__input" pattern="^+380\d{9}$" />
+        </label>
+        <label class="modal__label">
+          Пошта
+          <svg class="modal__icon_person">
+            <use href="../imgs/symbol-defs.svg#icon-email"></use>
+          </svg>
+          <input required type="email" class="modal__input" />
+        </label>
+        <label class="modal__label">
+          Коментар
+          <textarea class="modal__comment" placeholder="Введіть текст"></textarea>
+        </label>
+        <label class="custom__checkbox">
+          <input required type="checkbox" class="modal__checbox" />
+          <span class="modal__checkmark">
+            Погоджуюся з розсилкою та приймаю
+          </span>
+          <a href="#" class="modal__dogovor">Умови договору</a>
+        </label>
+        <div class="modal__button">
+          <button class="modal__send" type="submit">Відправити</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  
+ 
+  <script src="./js/modal.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>
