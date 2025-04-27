@@ -1,11 +1,10 @@
 .aboutus {
-    background-color: var(--team-background-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  
-  .aboutus-title {
-    color: var(--max-text-color);
+  background-color: $team-background-color;
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &__title {
+    color: $max-text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -15,41 +14,41 @@
     justify-content: center;
     margin-bottom: 50px;
   }
-  
-  .aboutus-list {
+
+  &__list {
     display: flex;
     justify-content: center;
     gap: 30px;
   }
-  
-  .aboutus-item {
-    background: var(--primary-color);
-    box-shadow: var(--box-shadow-color);
+
+  &__item {
+    background: $primary-color;
+    box-shadow: $box-shadow-color;
     border-radius: 0px 0px 4px 4px;
   }
-  
-  .aboutus-background {
+
+  &__background {
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  
-  .aboutus-image {
+
+  &__image {
     width: 270px;
     height: 260px;
     flex-shrink: 0;
   }
-  
-  .aboutus-heading {
-    color: var(--max-text-color);
+
+  &__heading {
+    color: $max-text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
   }
-  
-  .aboutus-text {
-    color: var(--mini-text-color);
+
+  &__text {
+    color: $mini-text-color;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -57,16 +56,15 @@
     letter-spacing: 0.48px;
     margin-top: 10px;
   }
-  
-  .aboutus-box {
+
+  &__box {
     display: flex;
     gap: 10px;
-
     justify-content: center;
     margin-top: 16px;
   }
-  
-  .aboutus-icon {
+
+  &__icon {
     width: 20px;
     height: 20px;
     fill: #afb1b8;
@@ -75,24 +73,25 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  .aboutus-internet {
+
+  &__internet {
     width: 44px;
     height: 44px;
-    background-color: var(--primary-color);
+    background-color: $primary-color;
     display: flex;
-
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .aboutus-internet:hover {
-    background-color: var(--button-backgrouhd-color);
-    .aboutus-icon {
-      fill: var(--primary-color);
+
+    &:hover {
+      background-color: $button-backgrouhd-color;
+
+      .aboutus__icon {
+        fill: $primary-color;
+      }
     }
   }
+}

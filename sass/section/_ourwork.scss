@@ -1,9 +1,8 @@
 .ourwork {
-    padding-bottom: 94px;
-  }
-  
-  .ourwork-title {
-    color: var(--max-text-color);
+  padding-bottom: 94px;
+
+  &__title {
+    color: $max-text-color;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -12,25 +11,37 @@
     display: flex;
     justify-content: center;
   }
-  
-  .ourwork-list {
+
+  &__list {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     gap: 30px;
   }
-  
-  .ourwork-item {
+
+  &__item {
     position: relative;
+
+    &:first-child .ourwork__text {
+      padding: 27px 107px;
+    }
+
+    &:nth-child(2) .ourwork__text {
+      padding: 27px 113px;
+    }
+
+    &:last-child .ourwork__text {
+      padding: 27px 95px;
+    }
   }
-  
-  .ourwork-img {
+
+  &__img {
     width: 370px;
     height: 294px;
   }
-  
-  .ourwork-text {
-    color: #fff;
+
+  &__text {
+    color: $primary-color;
     text-align: center;
     font-size: 14px;
     font-weight: 700;
@@ -39,15 +50,4 @@
     position: absolute;
     top: 224px;
   }
-  
-  .ourwork-item:first-child .ourwork-text {
-    padding: 27px 107px;
-  }
-  
-  .ourwork-item:nth-child(2) .ourwork-text {
-    padding: 27px 113px;
-  }
-  
-  .ourwork-item:last-child .ourwork-text {
-    padding: 27px 95px;
-  }
+}
