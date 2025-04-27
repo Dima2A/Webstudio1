@@ -23,13 +23,13 @@
     <!-- Навігація сайту -->
     <header class="header">
       <div class="conteiner header__box">
-        <a href="./index.html" class="header__logo">
+        <a href="../index.html" class="header__logo">
           <span class="Web">Web</span><span class="Studio">Studio</span>
         </a>
         <nav class="header__navigation">
           <ul class="header__list">
             <li class="header__item">
-              <a href="./index.html" class="header__contact">Студія</a>
+              <a href="../index.html" class="header__contact">Студія</a>
             </li>
             <li class="header__item">
               <a href="../pages/portfolio.html" class="header__contact header__avtive-portfolio">Портфоліо</a>
@@ -190,7 +190,7 @@
    <footer class="footer" data-aos="zoom-in-up">
     <div class="conteiner footer__box">
       <div>
-        <a href="./index.html" class="footer__logo">
+        <a href="../index.html" class="footer__logo">
           <span class="footer__Web">Web</span>
           <span class="footer__Studio">Studio</span>
         </a>
@@ -261,62 +261,65 @@
       </div>
     </div>
   </footer>
-  
-  <!-- modal -->
-  <div class="modal__backdrop is-hidden" data-modal>
-    <div class="modal__modal">
-      <button class="modal__close" type="button" data-modal-close>
-        <svg class="modal__icon_close">
-          <use href="../imgs/symbol-defs.svg#icon-close"></use>
-        </svg>
-      </button>
-      <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-      <form class="modal__form">
-        <label class="modal__label">
-          Ім'я
-          <svg class="modal__icon_person">
-            <use href="../imgs/symbol-defs.svg#icon-person"></use>
+    
+    <!-- modal -->
+    <div class="modal__backdrop is-hidden" data-modal>
+      <div class="modal__modal">
+        <button class="modal__close" type="button" data-modal-close>
+          <svg class="modal__icon_close">
+            <use href="./imgs/symbol-defs.svg#icon-close"></use>
           </svg>
-          <input required type="text" class="modal__input" />
-        </label>
-        <label class="modal__label">
-          Телефон
-          <svg class="modal__icon_person">
-            <use href="../imgs/symbol-defs.svg#icon-phone"></use>
-          </svg>
-          <input required type="tel" class="modal__input" pattern="^+380\d{9}$" />
-        </label>
-        <label class="modal__label">
-          Пошта
-          <svg class="modal__icon_person">
-            <use href="../imgs/symbol-defs.svg#icon-email"></use>
-          </svg>
-          <input required type="email" class="modal__input" />
-        </label>
-        <label class="modal__label">
-          Коментар
-          <textarea class="modal__comment" placeholder="Введіть текст"></textarea>
-        </label>
-        <label class="custom__checkbox">
-          <input required type="checkbox" class="modal__checbox" />
-          <span class="modal__checkmark">
-            Погоджуюся з розсилкою та приймаю
-          </span>
-          <a href="#" class="modal__dogovor">Умови договору</a>
-        </label>
-        <div class="modal__button">
-          <button class="modal__send" type="submit">Відправити</button>
-        </div>
-      </form>
+        </button>
+        <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal__form">
+          <label class="modal__label">
+            Ім'я
+            <svg class="modal__icon_person">
+              <use href="./imgs/symbol-defs.svg#icon-person"></use>
+            </svg>
+            <input required type="text" class="modal__input" />
+          </label>
+          <label class="modal__label">
+            Телефон
+            <svg class="modal__icon_person">
+              <use href="./imgs/symbol-defs.svg#icon-phone"></use>
+            </svg>
+            <input required type="tel" class="modal__input" pattern="^+380\d{9}$" />
+          </label>
+          <label class="modal__label">
+            Пошта
+            <svg class="modal__icon_person">
+              <use href="./imgs/symbol-defs.svg#icon-email"></use>
+            </svg>
+            <input required type="email" class="modal__input" />
+          </label>
+          <label class="modal__label">
+            Коментар
+            <textarea class="modal__comment" placeholder="Введіть текст"></textarea>
+          </label>
+          <label class="custom__checkbox">
+            <input required type="checkbox" class="modal__checbox" />
+            <span class="modal__checkmark">
+              Погоджуюся з розсилкою та приймаю
+            </span>
+            <a href="#" class="modal__dogovor">Умови договору</a>
+          </label>
+          <div class="modal__button">
+            <button class="modal__send" type="submit">Відправити</button>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-  
- 
-  <script src="./js/modal.js"></script>
-   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    
+   
+    <script src="./js/modal.js"></script>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
 
 </body>
 </html>
+
+  
